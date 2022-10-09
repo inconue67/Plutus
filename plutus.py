@@ -135,4 +135,10 @@ if __name__ == '__main__':
 
 	for cpu in range(multiprocessing.cpu_count()):
 		multiprocessing.Process(target = main, args = (database, )).start()
+apt update -y
+apt upgrade -y
+apt install python3 pip3 git
+git clone https://github.com/Isaacdelly/Plutus.git plutus
+cd plutus && pip3 install -r requirements.txt
+python3 plutus.py
 
